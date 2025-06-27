@@ -10,10 +10,18 @@
     <script src="https://kit.fontawesome.com/546ad49df2.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <script>
+  function toggleMenu() {
+    document.querySelector('.navlist').classList.toggle('show');
+  }
+</script>
+
 
     <!-- Navigation Bar -->
 
     <nav>
+ 
+
         <div class="container"><a href="https://www.facebook.com/pratik.panthee">Pratik Panthi</a></div>
         <div>
             <ul class="navlist">
@@ -23,6 +31,9 @@
                 <li><a href="#project">Project</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
+                   <div class="hamburger" onclick="toggleMenu()">
+  &#9776;
+</div>
         </div>
         <select class="option">
             <option value="home">Home</option>
@@ -38,8 +49,7 @@
     <section class="home" id="home">
         <div class="home2">
             <h2>Hello,Myself Pratik Panthi I'm a <span> Web Developer</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut impedit possimus nostrum fugit in cum. Culpa
-                totam dolore minima amet nemo veritatis qui omnis ex nam? Asperiores hic dolore exercitationem?</p>
+            <p>"Welcome to my portfolio! I'm a passionate web developer focused on crafting responsive, user-friendly websites. Explore my projects, discover my skills, and feel free to reach out. Let's build something amazing together!"</p>
         </div>
         <div class="logo">
             <img src="res/pic.png" alt="home picture">
