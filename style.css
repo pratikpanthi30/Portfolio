@@ -570,7 +570,7 @@ border-left:3px solid black ;
         background-color: #333;
         width: 100%;
         position: absolute;
-        top: 70px; /* height of nav bar */
+        top: 90px; /* height of nav bar */
         left: 0;
         z-index: 999;
     }
