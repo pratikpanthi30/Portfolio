@@ -1,149 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="res/icon.ico" type="image/x-icon">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="res/icon.ico" type="image/x-icon" />
+    <title>Pratik Panthi | Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/546ad49df2.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <script>
-  function toggleMenu() {
-    document.querySelector('.navlist').classList.toggle('show');
-  }
-</script>
-
-
     <!-- Navigation Bar -->
-
     <nav>
- 
-
-        <div class="container"><a href="https://www.facebook.com/pratik.panthee">Pratik Panthi</a></div>
-        <div>
+        <div class="nav-container">
+            <a href="#home" class="logo">Pratik Panthi</a>
+            <button class="hamburger" aria-label="Toggle navigation menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul class="navlist">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#content">Content</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-                   <div class="hamburger" onclick="toggleMenu()">
-  &#9776;
-</div>
         </div>
-        <select class="option">
-            <option value="home">Home</option>
-            <option value="about">About</option>
-            <option value="content">Content</option>
-            <option value="project">Project</option>
-            <option value="contact">Contact Me</option>
-        </select>
     </nav>
 
     <!-- Home  -->
-
     <section class="home" id="home">
-        <div class="home2">
-            <h2>Hello,Myself Pratik Panthi I'm a <span> Web Developer</span></h2>
-            <p>"Welcome to my portfolio! I'm a passionate web developer focused on crafting responsive, user-friendly websites. Explore my projects, discover my skills, and feel free to reach out. Let's build something amazing together!"</p>
-        </div>
-        <div class="logo">
-            <img src="res/pic.png" alt="home picture">
+        <div class="container">
+            <div class="home-content">
+                <div class="text-content">
+                    <h3 class="greeting">Hello, Myself</h3>
+                    <h1 class="name">Pratik Panthi</h1>
+                    <h2 class="title">I'm a <span class="highlight">Web Developer</span></h2>
+                    <p class="description">
+                        "Welcome to my portfolio! I'm a passionate web developer focused on crafting responsive,
+                        user-friendly websites. Explore my projects, discover my skills, and feel free to reach out. Let's build
+                        something amazing together!"
+                    </p>
+                    <a href="#contact" class="cta-button">Get In Touch</a>
+                </div>
+                <div class="image-content">
+                    <div class="image-wrapper">
+                        <img src="res/pic.png" alt="Portrait of Pratik Panthi" />
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-
     <section class="about" id="about">
-        <div class="about1">
-            <h2>About Me</h2>
-            <p class="kp">Hello! I'm a creative and detail-oriented web developer with a passion for building elegant,
-                user-friendly websites. I specialize in front-end technologies like HTML and CSS, and I'm constantly
-                learning more to improve my skills</p>
-        </div>
-        <div class="logo1">
-            <img src="res/logo.png" alt="profile picture">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Hello! I'm a creative and detail-oriented web developer with a passion for building elegant,
+                        user-friendly websites. I specialize in front-end technologies like HTML and CSS, and I'm constantly
+                        learning more to improve my skills.
+                    </p>
+                    <div class="skills">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Web Development</span>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="res/logo.png" alt="Profile picture of Pratik Panthi" />
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
     <!-- Content section  -->
     <section class="content" id="content">
-        <h2>Content</h2>
-        <div class="content1">
-            <p>I create web pages, write code, design layouts, and focus on responsive design to ensure great
-                experiences on all devices. Below you'll find some of my recent projects.
-            </p>
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <div class="content-card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <p class="content-description">
+                    I create web pages, write code, design layouts, and focus on responsive design to ensure great
+                    experiences on all devices. Below you'll find some of my recent projects.
+                </p>
+            </div>
         </div>
     </section>
 
     <!-- Project section -->
-
     <section class="project" id="project">
-        <h2>My Projects</h2>
-        <div class="project1">
-            <h2>Portfolio Website</h2>
-            <p>A personal portfolio created using only HTML and CSS, showcasing fixed navigation, sectioned layout, and
-                clean design.</p>
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        A personal portfolio created using only HTML and CSS, showcasing fixed navigation, sectioned layout,
+                        and clean design.
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-blog"></i>
+                    </div>
+                    <h3>Responsive Blog Template</h3>
+                    <p>
+                        A blog homepage template with a modern look and mobile-friendly structure using only HTML and CSS.
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Responsive</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="project2">
-            <h2>Responsive Blog Template</h2>
-            <p>A blog homepage template with a modern look and mobile-friendly structure using only HTML and CSS</p>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimon" id="testimon">
+        <div class="container">
+            <h2 class="section-title">Inspiration</h2>
+            <div class="testimonial-card">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="quote">"Clean code always looks like it was written by someone who cares."</p>
+                <p class="author">— Robert C. Martin</p>
+            </div>
         </div>
     </section>
 
     <!-- Contact section -->
     <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-container">
-            <div class="contact-links">
-                <p>If you'd like to get in touch, connect with me through any of the platforms below:</p>
-                <div class="contact-icons">
-                    <a href="mailto:pratikpanthi75@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://www.facebook.com/pratik.panthee"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://github.com/pratikpanthi30"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/pratik-panthi-b35815340/"><i
-                            class="fa-brands fa-linkedin"></i></a>
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p class="contact-description">If you'd like to get in touch, connect with me through any of the platforms below:</p>
+                    <div class="contact-links">
+                        <a href="mailto:pratikpanthi75@gmail.com" class="contact-link">
+                            <div class="link-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <span>pratikpanthi75@gmail.com</span>
+                        </a>
+                        <a href="https://www.facebook.com/pratik.panthee" class="contact-link">
+                            <div class="link-icon">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://github.com/pratikpanthi30" class="contact-link">
+                            <div class="link-icon">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pratik-panthi-b35815340/" class="contact-link">
+                            <div class="link-icon">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
                 </div>
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Enter subject" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
-            <form class="contact-form" action="#" method="post">
-
-                <label for="name">Name:</label>
-                <input type="text" id="name_1" placeholder="Enter your name" required>
-
-
-                <label for="email">Email:</label>
-                <input type="text" id="email_1" placeholder="Enter your email" required>
-
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject_1" placeholder="Enter subject" required>
-
-                <label for="message">Messege:</label>
-                <textarea name="message" id="message" rows="2"></textarea>
-
-                <input type="submit" id="submit" value="Send message">
-            </form>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-
-    <section class="testimon">
-        <h2>Testimonials</h2>
-        <div class="testimon1">
-            <p>Clean code always looks like it was written by someone who cares. — Robert C. Martin</p>
         </div>
     </section>
 
     <!-- Footer section -->
-
     <footer class="footer">
-        <div class="footer2">
-            <p>&copy; 2025 YourCompany. All rights reserved.</p>
-            <p><a href="">Privacy Policy</a> |<a href="">Contact us</a></p>
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">&copy; 2025 Pratik Panthi. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="back-to-top" onclick="scrollToTop()">
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.navlist').classList.toggle('show');
+            document.querySelector('.hamburger').classList.toggle('active');
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.navlist a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.navlist').classList.remove('show');
+                document.querySelector('.hamburger').classList.remove('active');
+            });
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
