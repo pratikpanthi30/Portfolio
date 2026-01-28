@@ -479,6 +479,36 @@ nav.scrolled {
 .read-more:hover {
     color: #1d4ed8;
 }
+/* Blog Intro Text */
+.blog-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #475569;
+    margin-bottom: 2.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Blog Tag Style */
+.blog-tag {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Optional: add subtle hover effect to tag */
+.blog-card:hover .blog-tag {
+    background: #1d4ed8;
+}
+
 
 
 /* Testimonials */
